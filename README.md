@@ -1,6 +1,8 @@
 # BARK AI | Your Intelligent Copilot for Solana
 v0.1.0-beta
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/284b9031-0043-4200-84a7-f17afe79bf0c/deploy-status)](https://app.netlify.com/sites/bark-ai/deploys)
+
 BARK AI is is a cutting-edge platform full-stack application that brings together the power of LLM models and blockchain technology. Designed for the [Solana](https://solana.com/) ecosystem, BARK Protocol enables seamless interactions with DeFi protocols, NFTs, and much more.
 
 ## AI Agent
