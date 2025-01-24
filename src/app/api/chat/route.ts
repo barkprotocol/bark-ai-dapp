@@ -1,4 +1,4 @@
-import { revalidatePath } from 'next/cache';
+import { revalidatePath } from "next/cache"
 
 import {
   CoreTool,
@@ -8,33 +8,24 @@ import {
   createDataStreamResponse,
   generateObject,
   streamText,
-} from 'ai';
-import { performance } from 'perf_hooks';
-import { z } from 'zod';
+} from "ai"
+import { performance } from "perf_hooks"
+import { z } from "zod"
 
-import {
-  defaultModel,
-  defaultSystemPrompt,
-  defaultTools,
-  getToolsFromRequiredTools,
-} from '@/ai/providers';
-import { MAX_TOKEN_MESSAGES } from '@/lib/constants';
-import { isValidTokenUsage, logWithTiming } from '@/lib/utils';
-import {
-  getConfirmationResult,
-  getUnconfirmedConfirmationMessage,
-  handleConfirmation,
-} from '@/lib/utils/ai';
-import { generateTitleFromUserMessage } from '@/server/actions/ai';
-import { getToolsFromOrchestrator } from '@/server/actions/orchestrator';
-import { verifyUser } from '@/server/actions/user';
+import { defaultModel, defaultSystemPrompt, defaultTools, getToolsFromRequiredTools } from "@/ai/providers"
+import { MAX_TOKEN_MESSAGES } from "@/lib/constants"
+import { isValidTokenUsage, logWithTiming } from "@/lib/utils"
+import { getConfirmationResult, getUnconfirmedConfirmationMessage, handleConfirmation } from "@/lib/utils/ai"
+import { generateTitleFromUserMessage } from "@/server/actions/ai"
+import { getToolsFromOrchestrator } from "@/server/actions/orchestrator"
+import { verifyUser } from "@/server/actions/user"
 import {
   dbCreateConversation,
   dbCreateMessages,
   dbCreateTokenStat,
   dbDeleteConversation,
   dbGetConversationMessages,
-} from '@/server/db/queries';
+} from "@/server/db/queries"
 
 export const maxDuration = 120;
 

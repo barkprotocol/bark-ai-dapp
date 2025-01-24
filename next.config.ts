@@ -10,14 +10,13 @@ const nextConfig = {
     ],
   },
   env: {
-    NEXT_PUBLIC_PRIVY_APP_ID: process.env.NEXT_PUBLIC_PRIVY_APP_ID, // Securely access your environment variable
+    NEXT_PUBLIC_PRIVY_APP_ID: process.env.NEXT_PUBLIC_PRIVY_APP_ID,
   },
   eslint: {
     ignoreDuringBuilds: true, // Allows the build to complete even with ESLint errors
   },
   experimental: {
-    appDir: true, // Enable if you're using the new App Router
-    serverActions: true, // Enable if you're using Server Actions
+    // Remove or update experimental features as needed
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     // Add your custom webpack config here if needed
@@ -43,11 +42,6 @@ const nextConfig = {
         ],
       },
     ]
-  },
-  api: {
-    bodyParser: {
-      sizeLimit: "1mb",
-    },
   },
 }
 
