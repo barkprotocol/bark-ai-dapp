@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "vercel-build": "NODE_OPTIONS=--max_old_space_size=2048 pnpm npx prisma generate && next build",
-    "dev": "NODE_NO_WARNINGS=1 next dev --turbopack",
+    "dev": "NODE_NO_WARNINGS=1 next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -22,6 +22,7 @@
     "@ai-sdk/openai": "^1.1.2",
     "@bonfida/spl-name-service": "^3.0.8",
     "@mem0/vercel-ai-provider": "^0.0.10",
+    "@netlify/plugin-nextjs": "^5.9.4",
     "@prisma/client": "^6.2.1",
     "@privy-io/react-auth": "^2.0.7",
     "@privy-io/server-auth": "^1.18.2",

@@ -20,6 +20,9 @@ importers:
       '@mem0/vercel-ai-provider':
         specifier: ^0.0.10
         version: 0.0.10(@types/node@22.10.10)(openai@4.80.0(encoding@0.1.13)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.24.1))(react@19.0.0)(sswr@2.1.0(svelte@5.15.0))(svelte@5.15.0)(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))(zod@3.24.1)
+      '@netlify/plugin-nextjs':
+        specifier: ^5.9.4
+        version: 5.9.4
       '@prisma/client':
         specifier: ^6.2.1
         version: 6.2.1(prisma@6.2.1)
@@ -1186,6 +1189,10 @@ packages:
 
   '@near-js/utils@0.0.4':
     resolution: {integrity: sha512-mPUEPJbTCMicGitjEGvQqOe8AS7O4KkRCxqd0xuE/X6gXF1jz1pYMZn4lNUeUz2C84YnVSGLAM0o9zcN6Y4hiA==}
+
+  '@netlify/plugin-nextjs@5.9.4':
+    resolution: {integrity: sha512-Q9qyhGUxFuM3kuWmoaj4yHPUfHhOsZmwdsQv4kIXkBWVu8FOe0RFHRP0A0EXciSVFGwq+XAo3H5jEtVSANAOWw==}
+    engines: {node: '>=18.0.0'}
 
   '@next/env@15.1.6':
     resolution: {integrity: sha512-d9AFQVPEYNr+aqokIiPLNK/MTyt3DWa/dpKveiAaVccUadFbhFEvY6FXYX2LJO2Hv7PHnLBu2oWwB4uBuHjr/w==}
@@ -8564,6 +8571,8 @@ snapshots:
       bn.js: 5.2.1
       depd: 2.0.0
       mustache: 4.2.0
+
+  '@netlify/plugin-nextjs@5.9.4': {}
 
   '@next/env@15.1.6': {}
 
