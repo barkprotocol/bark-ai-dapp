@@ -70,8 +70,9 @@ export const INTEGRATIONS: Integration[] = [
     label: "BARK",
     description: "Decentralized finance and AI-powered Solana assistant",
     theme: {
-      primary: #010101,
-      secondary: #FFFFFF,
+      primary: "#010101",
+      secondary: "#FFFFFF",
     },
   },
 ]
+
